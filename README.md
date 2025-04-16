@@ -4,7 +4,7 @@
 
 ## 🖼️ Vista previa
 
-![Vista previa del CV](img/preview-cv.png)
+![Vista previa del CV](img/prewiev_web.png)
 
 > 📍 Basado en Guernica, Buenos Aires, Argentina
 
