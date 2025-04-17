@@ -18,12 +18,25 @@
   .curriculum, .proyecto {
     color: white;
   }
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
   
   .nav {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
+    width: 300px;
+    margin-top: 5px;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(15, 15, 15, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
   }
   
   .nav-item {
@@ -33,12 +46,27 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    transition: all 0.3s ease;
   }
   
   .nav-item i {
     font-size: 24px;
     margin-bottom: 5px;
+    transition: all 0.3s ease;
   }
+  
+  .nav-item:hover i {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+                 0 0 12px rgba(255, 255, 255, 0.6),
+                 0 0 16px rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+  }
+  
+  .nav-item:hover {
+    color: #ffffff;
+  }
+  
   
   /* Texto principal */
   main {
@@ -72,4 +100,38 @@
     color: rgba(255, 255, 255, 0.2);
     letter-spacing: 4px;
   }
-  
+
+  .diseño::before {
+    content: "";
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(
+        41.76% 41.76% at 50% 50%,
+        #4e4e4e 0%,
+        rgba(191, 9, 255, 0) 100%
+      ),
+      url("Image/Texture.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: -40%;
+    left: -34%;
+    filter: blur(8px);
+  }
+  .glow-1::before{
+    content: "";
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(
+        41.76% 41.76% at 50% 50%,
+        #292929 0%,
+        rgba(191, 9, 255, 0) 100%
+      ),
+      url("Image/Texture.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: -33%;
+    filter: blur(8px);
+  }
