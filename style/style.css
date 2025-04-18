@@ -135,3 +135,38 @@
     left: -33%;
     filter: blur(8px);
   }
+  .glow-2::before{
+    content: "";
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(
+        41.76% 41.76% at 50% 50%,
+        #292929 0%,
+        rgba(191, 9, 255, 0) 100%
+      ),
+      url("Image/Texture.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    left: 73%;
+    filter: blur(8px);
+  }
+
+  .glow-3::before{
+    content: "";
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(
+        41.76% 41.76% at 50% 50%,
+        #292929 0%,
+        rgba(191, 9, 255, 0) 100%
+      ),
+      url("Image/Texture.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: -76%;
+    left: 60%;
+    filter: blur(8px);
+  }
